@@ -1,11 +1,9 @@
-MESLISTES LABO3 — 15 novembre 2026
+MesListes — Labo4, 15 novembre 2026
 
-Objectif : tester la présence et la qualité d'un moteur de reconnaissance manuscrite française fourni par le navigateur.
+But : vérifier si le modèle TrOCR français dj0w/trocr-french-handwriting-v5 est utilisable directement dans Safari iPhone avec Transformers.js.
 
-Installation : créer un dépôt GitHub Pages séparé et placer index.html à sa racine. Aucun autre fichier nécessaire.
+Installation : déposer index.html à la racine d'un dépôt GitHub Pages indépendant.
 
-IMPORTANT : Safari sur iPhone peut ne pas exposer l'API Web Handwriting Recognition. Si l'application indique « indisponible », c'est un résultat utile de compatibilité, pas un bug de MesListes.
+Ce laboratoire est un test de faisabilité, pas un OCR français garanti. Il vérifie d'abord les fichiers ONNX disponibles sur Hugging Face. Si aucun n'est présent, il explique qu'une conversion est nécessaire. Il ne bascule pas vers un modèle anglais.
 
-Aucun modèle français ONNX compatible Safari n'a été validé à ce stade. Google ML Kit Digital Ink est natif iOS/Android, non accessible directement à la PWA GitHub Pages. MyScript Web nécessite un service cloud avec quota d'essai et contrat pour déploiement.
-
-Ce laboratoire ne télécharge aucun modèle et n'envoie aucune écriture à un serveur.
+MesListes n'est pas modifiée. Aucun abonnement, aucune clé API.
