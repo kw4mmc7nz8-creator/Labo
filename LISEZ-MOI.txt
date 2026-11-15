@@ -1,13 +1,11 @@
-Laboratoire de reconnaissance manuscrite MesListes — TrOCR
+MESLISTES LABO3 — 15 novembre 2026
 
-1. Créer un nouveau dépôt public GitHub Pages (par exemple MesListes-Labo).
-2. Déposer index.html à la racine du dépôt.
-3. Dans Settings > Pages, choisir Deploy from a branch, main, /(root).
-4. Ouvrir l'adresse GitHub Pages sur l'iPhone dans Safari.
-5. Écrire un mot puis toucher Reconnaître.
+Objectif : tester la présence et la qualité d'un moteur de reconnaissance manuscrite française fourni par le navigateur.
 
-ATTENTION : cette expérience ne remplace PAS MesListes et ne doit pas être déposée dans le dépôt MesListes existant.
-Le premier chargement télécharge une bibliothèque JavaScript et les poids d'un modèle d'IA, potentiellement plusieurs dizaines à centaines de Mo. Le chargement peut échouer sur iPhone pour des raisons de mémoire, de compatibilité ou de réseau.
-Le modèle TrOCR Small Handwritten est principalement entraîné sur de l'anglais. La qualité pour les mots français n'est pas garantie.
-Les traits restent dans la page ; l'inférence est prévue dans le navigateur, sans API distante de reconnaissance. Les composants et poids sont téléchargés depuis des CDN / Hugging Face.
-L'archive contient la page du laboratoire, mais pas le modèle volumineux téléchargé au moment du test.
+Installation : créer un dépôt GitHub Pages séparé et placer index.html à sa racine. Aucun autre fichier nécessaire.
+
+IMPORTANT : Safari sur iPhone peut ne pas exposer l'API Web Handwriting Recognition. Si l'application indique « indisponible », c'est un résultat utile de compatibilité, pas un bug de MesListes.
+
+Aucun modèle français ONNX compatible Safari n'a été validé à ce stade. Google ML Kit Digital Ink est natif iOS/Android, non accessible directement à la PWA GitHub Pages. MyScript Web nécessite un service cloud avec quota d'essai et contrat pour déploiement.
+
+Ce laboratoire ne télécharge aucun modèle et n'envoie aucune écriture à un serveur.
